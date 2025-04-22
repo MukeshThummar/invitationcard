@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ગંગા સ્વરૂપ મહિલા ચેરિટેબલ ટ્રસ્ટ.</title>
+  <link rel="icon" href="images/logo-transparent.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="form-section">
+    <header class="page-header">
+      <img src="images/logo-transparent.png" alt="Logo" class="site-logo" />
+      <h1 class="site-title">ગંગા સ્વરૂપ મહિલા ચેરિટેબલ ટ્રસ્ટ.</h1>
+    </header>
+    <form id="invitationForm">
+      <label>ફોટો: <input type="file" id="photoInput" accept="image/*"></label><br>
+      <label>નામ: <input type="text" id="nameInput" placeholder="નામ:"></label><br>
+      <div class="datetime-row">
+        <div>
+          <label for="dateInput">તારીખ:</label>
+          <input type="date" id="dateInput" />
+        </div>
+        <div>
+          <label for="timeInput">સમય:</label>
+          <input type="time" id="timeInput" />
+        </div>
+      </div>
+      <label>સ્થળ: <textarea id="addressInput" placeholder="સ્થળ"></textarea></label><br>
+      <div id="sponsorsSection">
+        <label>નિમંત્રક:
+          <input type="text" class="sponsorInput" placeholder="નિમંત્રક નું નામ અને મોબાઇલ નંબર">
+        </label>
+      </div>
+      <button type="button" onclick="addSponsor()">નિમંત્રક ઉમેરો</button><br><br>
+      <button type="button" onclick="previewImage()">Preview</button>
+      <button type="button" onclick="downloadImage()">Download</button>
+    </form>
+  </div>
+
+  <div class="preview-section">
+    <canvas id="invitationCanvas" width="768" height="1086"></canvas>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
